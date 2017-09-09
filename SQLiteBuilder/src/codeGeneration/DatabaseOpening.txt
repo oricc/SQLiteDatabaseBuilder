@@ -1,0 +1,40 @@
+import android.content.ContentValues;
+import android.content.Context;
+import android.database.sqlite.SQLiteDatabase;
+import android.util.Log;
+
+
+public class Database {
+    private DBHelper helper;
+    private final Context context;
+    private SQLiteDatabase database;
+
+    /**
+     * Default constructor - initializes the context
+     *
+     * @param c the context
+     */
+    public Database(Context c) {
+        context = c;
+    }
+
+    /**
+     * This function opens the database to enable reading and writing.
+     *
+     * @return the open database
+     */
+    public Database open() {
+        helper = new DBHelper(context);
+        database = helper.getWritableDatabase();
+        Log.d("GameDatabase open", "database=" + database.toString());
+        return this;
+    }
+
+    /**
+     * This function closes the database
+     *
+     * @see DBHelper#close()
+     */
+    public void close() {
+        helper.close();
+    }

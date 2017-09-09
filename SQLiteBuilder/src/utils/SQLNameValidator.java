@@ -37,6 +37,9 @@ public class SQLNameValidator {
 	}
 
 	private static boolean charIsLegal(char current) {
+            
+                if(current == '_')
+                    return true;
 		if (!((current >= 'A' && current <= 'Z') || (current >= 'a' && current <= 'z')
 				|| (current >= '0' && current <= '9'))) {
 			return false;
