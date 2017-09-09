@@ -8,8 +8,10 @@ When done, click on code->Generate Java Code and select a location to save the f
 </p>
 <p>
 Two files will be created in a new folder:<br>
-1)<b>Database.java:</b> the actual database you will use in your application.<br>
-2)<b>DBHelper.java:</b> a helper class to create the SQLite database.
+<ol>
+  <li><b>Database.java:</b> the actual database you will use in your application.</li>
+  <li><b>DBHelper.java:</b> a helper class to create the SQLite database.</li>
+</ol>
 </p>
 <p>
 See: <br>
