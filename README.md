@@ -13,6 +13,10 @@ Two files will be created in a new folder:<br>
   <li><b>DBHelper.java:</b> a helper class to create the SQLite database.</li>
 </ol>
 </p>
+<h3>Get Program</h3>
+
+  You can get the built program (.jar file) [here](./SQLiteBuilder/dist/SQLiteBuilder.jar) (click the download button)
+  
 <p>
 See: <br>
 <a href="https://developer.android.com/training/basics/data-storage/databases.html">Android developers: database</a><br>
