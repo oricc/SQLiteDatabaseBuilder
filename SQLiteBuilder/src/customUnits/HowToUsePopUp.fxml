@@ -9,7 +9,6 @@
 <?import javafx.scene.layout.FlowPane?>
 <?import javafx.scene.text.Font?>
 
-
 <FlowPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="637.0" prefWidth="724.0" vgap="10.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <Label text="How To Use">
@@ -94,22 +93,25 @@
                   </Label>
                   <ImageView fitHeight="324.0" fitWidth="583.0" layoutX="10.0" layoutY="1945.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@6ClearAll.PNG" />
+                        <Image url="@7GenerateCode1.PNG" />
                      </image>
                   </ImageView>
-                  <ImageView fitHeight="324.0" fitWidth="583.0" layoutX="10.0" layoutY="2324.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@6ClearAll.PNG" />
-                     </image>
-                  </ImageView>
+                  <Label text="You will need to select a location for the files to be saved.&#10;The name you enter is for the folder the files will be saved in." />
                   <ImageView fitHeight="324.0" fitWidth="583.0" layoutX="10.0" layoutY="2663.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@6ClearAll.PNG" />
+                        <Image url="@7GenerateCode2.PNG" />
                      </image>
                   </ImageView>
+                  <Label layoutX="10.0" layoutY="2663.0" text="After the files are generated, the promp will shown." />
                   <ImageView fitHeight="324.0" fitWidth="583.0" layoutX="10.0" layoutY="3002.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@6ClearAll.PNG" />
+                        <Image url="@7GenerateCode3.PNG" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="10.0" layoutY="3051.0" text="The files should be in the folder name you gave." />
+                  <ImageView fitHeight="324.0" fitWidth="583.0" layoutX="10.0" layoutY="2663.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@7GenerateCode4.PNG" />
                      </image>
                   </ImageView>
                </children>

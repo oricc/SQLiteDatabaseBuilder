@@ -60,11 +60,13 @@ public class PopupWindows {
             root = FXMLLoader.load(PopupWindows.class.getResource("HowToUsePopUp.fxml"));
             Stage stage = new Stage();
             stage.setTitle("How To Use");
-            stage.setScene(new Scene(root, 600, 450));
+            stage.setScene(new Scene(root, 1200, 450));
             stage.show();
             // Hide this current window (if this is what you want)
             ((Node) (event.getSource())).getScene().getWindow().hide();
         } catch (IOException e) {
+            e.printStackTrace();
+        } catch (Exception e){
             e.printStackTrace();
         }
     }

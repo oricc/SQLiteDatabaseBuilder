@@ -2,11 +2,14 @@
 
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.FlowPane?>
 <?import javafx.scene.text.Font?>
 
-
-<FlowPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="400.0" prefWidth="600.0" vgap="10.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1">
+<FlowPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="637.0" prefWidth="724.0" vgap="10.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <Label text="How To Use">
          <font>
@@ -17,6 +20,104 @@
          </padding>
       </Label>
       <Label text="The program is used to generate the java files that create the database.&#10;The instructions below are here to help you use the program in the most efficient way.&#10;" />
+      <Label prefHeight="159.0" prefWidth="382.0" text="A database is made out of tables, each of which has columns.&#10;The program enables you to create them graphicaly.&#10;In order to genarate proper code, we need to follow the following steps:&#10;&#10;&#10;1) Add tables&#10;2) Add columns&#10;3) Name your database&#10;4) Generate the code&#10;" />
+      <Separator prefWidth="200.0" />
+      <ScrollPane prefHeight="343.0" prefWidth="701.0">
+         <content>
+            <FlowPane hgap="10.0" prefHeight="200.0" prefWidth="200.0" vgap="15.0">
+               <children>
+                  <Label text="General Layout of the program">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="324.0" fitWidth="583.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@1GeneralLayout.png" />
+                     </image>
+                  </ImageView>
+                  <Label text="Add new table">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="324.0" fitWidth="583.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@2AddTable.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="220.0" layoutY="389.0" text="Delete table">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="324.0" fitWidth="583.0" layoutX="10.0" layoutY="429.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@3DeleteTable.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="10.0" layoutY="768.0" text="Add new column">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="324.0" fitWidth="583.0" layoutX="10.0" layoutY="808.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@4AddColumn.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="10.0" layoutY="1147.0" text="Delete column">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="324.0" fitWidth="583.0" layoutX="10.0" layoutY="1187.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@5DeleteCol.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="10.0" layoutY="1526.0" text="Clear all tables">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="324.0" fitWidth="583.0" layoutX="10.0" layoutY="1566.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@6ClearAll.PNG" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="10.0" layoutY="1905.0" text="Generate Code">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="324.0" fitWidth="583.0" layoutX="10.0" layoutY="1945.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@7GenerateCode1.PNG" />
+                     </image>
+                  </ImageView>
+                  <Label text="You will need to select a location for the files to be saved.&#10;The name you enter is for the folder the files will be saved in." />
+                  <ImageView fitHeight="324.0" fitWidth="583.0" layoutX="10.0" layoutY="2663.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@7GenerateCode2.PNG" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="10.0" layoutY="2663.0" text="After the files are generated, the promp will shown." />
+                  <ImageView fitHeight="324.0" fitWidth="583.0" layoutX="10.0" layoutY="3002.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@7GenerateCode3.PNG" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="10.0" layoutY="3051.0" text="The files should be in the folder name you gave." />
+                  <ImageView fitHeight="324.0" fitWidth="583.0" layoutX="10.0" layoutY="2663.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@7GenerateCode4.PNG" />
+                     </image>
+                  </ImageView>
+               </children>
+            </FlowPane>
+         </content>
+      </ScrollPane>
    </children>
    <padding>
       <Insets left="15.0" />
